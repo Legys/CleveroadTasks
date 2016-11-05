@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="navigation">
+            <ul class="nav nav-stacked nav-pills  col-sm-2">
+                <li class="active"><a href="dashboard.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main col-sm-10">
+            <div class="page-header">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <ol class="breadcrumb col-sm-7">
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li class="active">User list</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Birthday</th>
+                    <th>City</th>
+                    <th>Active</th>
+                    <th>Boss</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>06.07.2008</td>
+                    <td>Budapest</td>
+                    <td>
+                        <input id='checkbox-first' name="checkbox" type="checkbox" hidden>
+                        <label for="checkbox-first">
+                         </label>
+
+                    </td>
+                    <td>
+                        <input id='radio-1' type="radio" name="radio" hidden>
+                        <label for="radio-1"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mary</td>
+                    <td>01.02.2003</td>
+                    <td>Berlin</td>
+                    <td>
+                        <input id='checkbox-second' type="checkbox" name="checkbox" type="checkbox" hidden>
+                        <label for="checkbox-second">
+                        </label>
+                    <td>
+                        <input id='radio-2' type="radio" name="radio" hidden>
+                        <label for="radio-2"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>James</td>
+                    <td>04.05.2006</td>
+                    <td>Vienna</td>
+                    <td>
+                        <input id='checkbox-third' type="checkbox" name="checkbox" type="checkbox" hidden>
+                        <label for="checkbox-third">
+                        </label>
+                    <td>
+                        <input id='radio-3' type="radio" name="radio" hidden>
+                        <label for="radio-3"></label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
