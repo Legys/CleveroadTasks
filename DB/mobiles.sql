@@ -85,8 +85,6 @@ INSERT INTO mobs_orders VALUES
 
 SELECT
   mobs_orders.order_id,
-  mobs_orders.mob_id AS 'Mob ID',
-  mobs.name AS 'Phone',
   orders.order_date AS 'Order date',
   count(mobs_orders.order_id) AS 'Amount of items',
   SUM((SELECT mobs.cost FROM mobs WHERE mobs_orders.mob_id = mobs.id)) AS 'Total price'
